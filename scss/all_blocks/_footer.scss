@@ -21,13 +21,17 @@
 }
 
 .footer__list-box {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   margin-bottom: 79px;
 }
 
 .footer__list {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .footer__list-item:nth-child(2n) {

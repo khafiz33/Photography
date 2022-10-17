@@ -1,10 +1,10 @@
 button {
   margin: 0;
   padding: 0;
-
+  
   border: none;
   background-color: transparent;
-
+  
   cursor: pointer;
 }
 
@@ -24,7 +24,9 @@ button {
 }
 
 .header__box {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   position: relative;
 }
@@ -56,7 +58,9 @@ button {
 }
 
 .header__link-box {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .header__box-home-logo:hover {
@@ -65,7 +69,9 @@ button {
 }
 
 .header__box-nav-list {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .header__box-list-item {
@@ -93,8 +99,10 @@ button {
 }
 
 .header__box-form {
-  @include displaystart;
-
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
   max-width: 390px;
   width: 100%;
 }
@@ -150,36 +158,36 @@ button {
     padding-top: 21px;
     padding-bottom: 21px;
   }
-
+  
   .header__box-resource-img {
     top: -56%;
   }
-
+  
   .header__box-form {
     max-width: 262px;
   }
-
+  
   .header__box-list-item {
     margin: 0 12px;
   }
-
+  
   .header__box-item-link {
     font-size: 10px;
   }
-
+  
   .header__box-form-input {
     max-width: 155px;
     height: 37px;
     padding: 10px 10px 11px 35px;
-
+    
     font-size: 12px;
   }
-
+  
   .header__form-lupa-logo {
     width: 18px;
     height: 15px;
   }
-
+  
   .header__box-form-btn {
     max-width: 107px;
     height: 37px;
@@ -187,28 +195,28 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-
+  
   body {
     padding-top: 77px;
   }
-
+  
   .header {
     padding-top: 26px;
     padding-bottom: 26px;
   }
-
+  
   .header__box-list-item {
     margin: 0 11px;
   }
-
+  
   .header__box-item-link {
     font-size: 12px;
   }
-
+  
   .header__box-form {
     display: none;
   }
-
+  
   .header__box-resource-img {
     top: -104%;
     left: 78%;
@@ -216,30 +224,30 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-
+  
   body {
     padding-top: 66px;
   }
-
+  
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  
   .header__box-resource-img {
     width: 130px;
     height: 84px;
   }
-
+  
   .header__box-nav {
     display: none;
   }
-
+  
   .header__box-nav-list {
     flex-direction: column;
-
+    
     position: absolute;
-
+    
     top: 45px;
     left: -20px;
     padding: 30px 10px;
@@ -248,7 +256,7 @@ button {
     background-repeat: no-repeat;
     background-size: 200px 400px;
   }
-
+  
   .header__box-resource-img {
     position: absolute;
     z-index: 999;
@@ -258,11 +266,11 @@ button {
     bottom: 0;
     left: 64%;
   }
-
+  
   .header--active .header__box-nav {
     display: block;
   }
-
+  
   .header__box-item-link {
     color: #fff;
   }
@@ -272,19 +280,19 @@ button {
   body {
     padding-top: 55px;
   }
-
+  
   .header {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
+  
   .header__box-resource-img {
     width: 110px;
     height: 74px;
     top: -60%;
     left: 65%;
   }
-
+  
   .header__box-nav-list {
     top: 40px;
   }

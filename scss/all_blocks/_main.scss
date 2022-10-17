@@ -91,7 +91,9 @@
   
   color: $white;
   
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero__link-box-text-2 {
@@ -104,7 +106,9 @@
   color: $white;
   
   text-transform: capitalize;
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero__link-box-link-2 {
@@ -137,7 +141,9 @@
   
   color: #4D4D4D;
   
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero__link-box-text-4 {
@@ -150,11 +156,15 @@
   color: #4D4D4D;
   
   text-transform: capitalize;
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero__meet-box {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   width: 100%;
   padding-left: 150px;
@@ -237,7 +247,9 @@
 }
 
 .hero__meet-img-box {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   
   margin-bottom: -80px;
 }
@@ -297,7 +309,9 @@
   border: none;
   
   cursor: pointer;
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   
   &:hover {
     transform: scale(0.9);
@@ -768,7 +782,9 @@
 }
 
 .blog__img-small-user-box {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .blog__img-small-user-img {
@@ -885,10 +901,10 @@
   
   text-transform: capitalize;
   text-decoration: none;
-
+  
   &:hover {
     color: $lightgreen;
-  
+    
     transition: all 0.3s ease;
   }
 }
@@ -1061,7 +1077,9 @@
   }
   
   .blog__flex-img-box {
-    @include displaystart;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     margin-left: 11px;
   }
   
@@ -1138,8 +1156,16 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .blog__img1 {
-    width: 318px;
+    width: 338px;
     height: 418px;
   }
   
@@ -1163,7 +1189,7 @@
   }
   
   .blog__img2 {
-    width: 318px;
+    width: 338px;
     height: 190px;
   }
   
@@ -1218,7 +1244,9 @@
 }
 
 .photography__bgimg-link {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   width: 355px;
   height: 68px;
@@ -1228,7 +1256,9 @@
   border-radius: 0px;
   
   text-decoration: none;
-  @include textellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   
   &:hover {
     transform: scale(0.9);
@@ -1374,13 +1404,14 @@
 
 @media only screen and (max-width: 375px) {
   .photography__bgimg {
-    width: 315px;
+    width: 338px;
     height: 190px;
   }
   
   .photography__bgimg-box-texts {
-    width: 315px;
+    width: 338px;
     padding: 15px 15px 39px 15px;
+    margin-right: 0;
   }
 }
 
@@ -1405,7 +1436,9 @@
 }
 
 .buy__list {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   margin-bottom: 87px;
 }
@@ -1418,7 +1451,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.3);
   border-radius: 0px;
-
+  
   &:hover {
     background: $white;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1454,7 +1487,9 @@
 }
 
 .buy__item-span {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   
   margin-bottom: 36px;
 }
@@ -1489,7 +1524,9 @@
 }
 
 .buy__list-item-link {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   
   width: 190px;
   
@@ -1541,7 +1578,9 @@
 }
 
 .buy__link {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   
   margin-bottom: 16px;
   
@@ -1552,10 +1591,10 @@
   color: $white;
   
   text-decoration: none;
-
+  
   &:hover {
     color: $lightgreen;
-  
+    
     transition: all 0.5s ease;
   }
 }
@@ -1591,10 +1630,10 @@
   
   text-align: center;
   text-decoration: none;
-
+  
   &:hover {
     color: $lightgreen;
-  
+    
     transition: all 0.5s ease;
   }
 }
@@ -1623,7 +1662,7 @@
   
   .buy__list {
     flex-direction: column;
-
+    
     max-width: 597px;
     width: 100%;
     margin: 0;
@@ -1631,7 +1670,9 @@
   }
   
   .buy__list-item {
-    @include display;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
     max-width: 567px;
     width: 100%;
@@ -1645,7 +1686,7 @@
   
   .buy__texts-box {
     justify-content: space-between;
-
+    
     max-width: 567px;
   }
   
@@ -1663,7 +1704,7 @@
   
   .buy__heading {
     margin-bottom: 40px;
-
+    
     font-size: 28px;
     line-height: 30px;
   }
@@ -1681,7 +1722,7 @@
   
   .buy__texts-box {
     flex-direction: column;
-
+    
     margin-left: -14px;
     
     text-align: center;
@@ -1706,10 +1747,15 @@
   .buy__link {
     margin: 0;
     margin-bottom: 12px;
+    margin-left: 10px;
   }
   
   .buy__texts-box-text {
-    margin-left: -28px;
+    margin-left: -12px;
+  }
+
+  .buy__texts-box-link {
+    margin-left: 85px;
   }
 }
 
@@ -1719,7 +1765,9 @@
 }
 
 .others__box {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .others__white-box {
@@ -1813,7 +1861,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   position: absolute;
   
   width: 145px;
@@ -1833,7 +1881,7 @@
   border-radius: 0px;
   
   text-decoration: none;
-
+  
   &:hover {
     transform: scale(0.9);
     transition: all 1s ease;
@@ -1898,7 +1946,9 @@
 }
 
 .others__grey-item-box {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
   margin-bottom: 24px;
   
@@ -1954,10 +2004,10 @@
   
   text-transform: capitalize;
   text-decoration: none;
-
+  
   &:hover {
     color: $lightgreen;
-  
+    
     transition: all 0.5s ease;
   }
 }
@@ -2038,14 +2088,14 @@
   
   .others__white-img-small-link {
     margin-bottom: 10px;
-
+    
     font-size: 17px;
     line-height: 20px;
   }
   
   .others__white-img-small-text {
     width: 170px;
-
+    
     font-size: 10px;
     line-height: 18px;
   }
@@ -2053,14 +2103,14 @@
   .others__white-img-link {
     max-width: 94px;
     left: 60%;
-
+    
     height: 32px;
     font-size: 12px;
   }
   
   .others__white-img-small-link-small {
     display: inline-block;
-
+    
     margin-top: 20px;
   }
   
@@ -2085,7 +2135,7 @@
   
   .others__grey-box {
     width: 357px;
-    padding-right: 5px;
+    padding-right: 8px;
   }
   
   .others__grey-item-hr {
@@ -2143,7 +2193,7 @@
   line-height: 21px;
   
   border: 1px solid #E0E0E0;
-
+  
   &:focus {
     outline: none;
   }
@@ -2154,7 +2204,7 @@
   
   top: 15px;
   left: 16px;
-
+  
   &:hover {
     transform: scale(1.2);
     transition: all 0.8s ease;
@@ -2181,7 +2231,7 @@
   border: none;
   
   cursor: pointer;
-
+  
   &:hover {
     transform: rotate(360deg);
     transition: all 1.2s ease;
@@ -2189,7 +2239,9 @@
 }
 
 .search__list {
-  @include display;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   
   width: 952px;
@@ -2203,7 +2255,7 @@
   background: $white;
   border: 3px solid #E6E8EE;
   border-radius: 0px;
-
+  
   &:hover {
     transform: scale(1.1);
     transition: all 0.8s ease;
@@ -2243,7 +2295,7 @@
   border-radius: 0px;
   
   text-decoration: none;
-
+  
   &:hover {
     color: #fff;
     background-color: $lightgreen;
@@ -2257,7 +2309,9 @@
 }
 
 .search__small-item-link {
-  @include displaystart;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   
   font-weight: 400;
   font-size: 12px;
@@ -2266,10 +2320,10 @@
   color: $orange;
   
   text-decoration: none;  
-
+  
   &:hover {
     color: $lightgreen;
-  
+    
     transition: all 0.5s ease;
   }
 }
@@ -2286,7 +2340,7 @@
   .search__list {
     flex-wrap: wrap;
     justify-content: center;
-
+    
     width:  631px;
     margin-right: auto;
     margin-left: auto;
@@ -2303,14 +2357,14 @@
 @media only screen and (max-width: 425px) {
   .search__small-heading {
     margin: 0;
-
+    
     font-size: 20px;
     line-height: 24px;
   }
   
   .search__heading {
     margin-bottom: 40px;
-
+    
     font-size: 38px;
     line-height: 34px;
   }
@@ -2346,6 +2400,7 @@
   }
   
   .search__input {
+    width: 206px;
     padding: 12px 0 12px 48px;
   }
   
