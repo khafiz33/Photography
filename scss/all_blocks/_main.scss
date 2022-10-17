@@ -684,6 +684,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .hero__box {
     padding: 0;
     padding-top: 15px;
@@ -1160,8 +1168,8 @@
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .blog__img1 {
@@ -1403,6 +1411,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .photography__bgimg {
     width: 338px;
     height: 190px;
@@ -1744,6 +1760,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .buy__link {
     margin: 0;
     margin-bottom: 12px;
@@ -2125,6 +2149,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .others {
     margin-bottom: 50px;
   }
@@ -2390,6 +2422,14 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .search__small-heading {
     font-size: 17px;
   }
