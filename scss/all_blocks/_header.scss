@@ -154,6 +154,14 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -195,9 +203,16 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-  
   body {
     padding-top: 77px;
+  }
+
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .header {
@@ -224,9 +239,16 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-  
   body {
     padding-top: 66px;
+  }
+
+  .container {
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .header {
@@ -279,6 +301,14 @@ button {
 @media only screen and (max-width: 375px) {
   body {
     padding-top: 55px;
+  }
+
+  .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .header {

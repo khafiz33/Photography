@@ -102,6 +102,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer {
     padding: 100px 55px 110px 55px;
   }
@@ -116,6 +124,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer {
     padding: 70px 55px 80px 35px;
   }
@@ -140,6 +156,14 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .container {
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer__list-box {
     margin-bottom: 30px;
   }
