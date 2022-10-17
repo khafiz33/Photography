@@ -1,0 +1,17 @@
+@mixin display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin displaystart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+@mixin textellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,155 @@
+.footer {
+  width: 100%;
+  padding: 130px 185px 110px 185px;
+
+  background-image: url("../images/jpg/meet-img.jpg");
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+}
+
+.footer__logo-text {
+  width: 300px;
+  margin: 0;
+  
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $white;
+}
+
+.footer__list-box {
+  @include display;
+
+  margin-bottom: 79px;
+}
+
+.footer__list {
+  @include displaystart;
+}
+
+.footer__list-item:nth-child(2n) {
+  margin: 0 52px;
+}
+
+.footer__item-heading {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: $white;
+}
+
+.footer__list-small-item {
+  margin-bottom: 7px;
+}
+
+.footer__small-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #ABA8CA;
+
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+}
+
+.footer__link-box-white-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+
+  color: $white;
+
+  text-decoration: none;
+
+  &:nth-child(2n) {
+    margin-left: 10px;
+  }
+}
+
+.footer__link-box-red-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+
+  color: $orange;
+  
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.5s ease;
+    color: $lightgreen;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    padding: 100px 55px 110px 55px;
+  }
+
+  .footer__small-item-link {
+    font-size: 13px;
+  }
+
+  .footer__item-heading {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 70px 55px 80px 35px;
+  }
+
+  .footer__list-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__logo-box {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer__list {
+    text-align: center;
+  }
+
+  .footer__link-box {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer__list-box {
+    margin-bottom: 30px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .footer__list-item {
+    margin-bottom: 20px;
+
+    &:nth-child(2n) {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
